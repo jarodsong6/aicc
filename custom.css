@@ -1,3 +1,15 @@
+@font-face {
+ font-family: "Roboto Mono";
+ font-weight: normal;
+ font-style: normal;
+ src: local('"Roboto Mono"'), url('fonts/roboto.ttf') format('truetype');
+}
+@font-face {
+ font-family: "Roboto Mono";
+ font-weight: normal;
+ font-style: italic;
+ src: local('"Roboto Mono"'), url('fonts/roboto-italic.ttf') format('truetype');
+}
 div#notebook {
  font-family: sans-serif;
  font-size: 13pt;
@@ -457,28 +469,28 @@ div#notebook {
  background-color: #262931;
  min-height: 0px;
  box-shadow: none;
- width: 980px;
+ width: 90%;
  margin-right: auto;
  margin-left: auto;
 }
 div#ipython-main-app.container {
- width: 980px;
+ width: 90%;
  margin-right: auto;
  margin-left: auto;
  margin-right: auto;
  margin-left: auto;
 }
 .container {
- width: 980px;
+ width: 90%;
  margin-right: auto;
  margin-left: auto;
 }
 div#menubar-container {
  width: 100%;
- width: 980px;
+ width: 90%;
 }
 div#header-container {
- width: 980px;
+ width: 90%;
 }
 .notebook_app #header,
 .edit_app #header {
@@ -794,7 +806,7 @@ div.notification_widget {
 }
 #kernel_logo_widget,
 #kernel_logo_widget .current_kernel_logo {
- display: none;
+ display: block;
 }
 div#ipython_notebook {
  display: none;
@@ -1596,7 +1608,7 @@ div.cell.selected.jupyter-soft-selected .input {
 }
 div.prompt,
 .prompt {
- font-family: monospace, monospace;
+ font-family: "Roboto Mono", monospace, monospace;
  font-size: 9pt !important;
  font-weight: normal;
  color: #446489;
@@ -1684,8 +1696,8 @@ div.output_wrapper {
 }
 div.output_subarea.output_text.output_stream.output_stdout,
 div.output_subarea.output_text {
- font-family: monospace, monospace;
- font-size: 8.5pt !important;
+ font-family: "Roboto Mono", monospace, monospace;
+ font-size: 8pt !important;
  line-height: 150% !important;
  background-color: #384151;
  color: #cdd2e9;
@@ -1694,8 +1706,8 @@ div.output_subarea.output_text {
  margin-left: 11.5px;
 }
 div.output_area pre {
- font-family: monospace, monospace;
- font-size: 8.5pt !important;
+ font-family: "Roboto Mono", monospace, monospace;
+ font-size: 8pt !important;
  line-height: 151% !important;
  color: #cdd2e9;
  border-top-right-radius: 0px;
@@ -1705,8 +1717,8 @@ div.output_area {
  display: -webkit-box;
 }
 div.output_html {
- font-family: monospace, monospace;
- font-size: 8.5pt;
+ font-family: "Roboto Mono", monospace, monospace;
+ font-size: 8pt;
  color: #dbdfef;
  background-color: #384151;
  background: #384151;
@@ -1730,7 +1742,7 @@ div.btn.btn-default.output_collapsed:hover {
  border-color: #1f252d;
 }
 div.prompt.output_prompt {
- font-family: monospace, monospace;
+ font-family: "Roboto Mono", monospace, monospace;
  font-weight: bold !important;
  background-color: #384151;
  color: transparent;
@@ -1743,7 +1755,7 @@ div.prompt.output_prompt {
  border-right: 2px solid transparent;
 }
 div.out_prompt_overlay.prompt {
- font-family: monospace, monospace;
+ font-family: "Roboto Mono", monospace, monospace;
  font-weight: bold !important;
  background-color: #384151;
  border-bottom-left-radius: 2px;
@@ -1788,7 +1800,7 @@ div.text_cell,
 div.text_cell_render pre,
 div.text_cell_render {
  font-family: sans-serif;
- font-size: 13pt;
+ font-size: 10pt;
  line-height: 130% !important;
  color: #abc1e2;
  background: #303845;
@@ -1860,7 +1872,7 @@ div.cell.text_cell .prompt {
  width: 11.5ex !important;
 }
 div.cell.text_cell.rendered .prompt {
- font-family: monospace, monospace;
+ font-family: "Roboto Mono", monospace, monospace;
  font-size: 9.5pt !important;
  font-weight: normal;
  color: #446489 !important;
@@ -1872,7 +1884,7 @@ div.cell.text_cell.rendered .prompt {
  border-left: 4px solid #303845;
 }
 div.cell.text_cell.unrendered .prompt {
- font-family: monospace, monospace;
+ font-family: "Roboto Mono", monospace, monospace;
  font-size: 9.5pt !important;
  font-weight: normal;
  color: #446489 !important;
@@ -1899,8 +1911,8 @@ div.text_cell.rendered.selected .prompt {
  border-right: 2px solid rgba(53,114,198,.5);
 }
 div.rendered_html code {
- font-family: monospace, monospace;
- font-size: 11pt;
+ font-family: "Roboto Mono", monospace, monospace;
+ font-size: 10pt;
  padding-top: 3px;
  padding-left: 2px;
  color: #cdd2e9;
@@ -1915,8 +1927,8 @@ samp {
 }
 .well code,
 code {
- font-family: monospace, monospace;
- font-size: 11pt !important;
+ font-family: "Roboto Mono", monospace, monospace;
+ font-size: 10pt !important;
  line-height: 170% !important;
  color: #abc1e2;
  background: #2a313c;
@@ -1925,7 +1937,7 @@ code {
 }
 kbd {
  padding: 1px;
- font-size: 11pt;
+ font-size: 10pt;
  font-weight: 800;
  color: #cdd2e9;
  background-color: transparent !important;
@@ -1955,8 +1967,8 @@ div.rendered_html {
  margin-bottom: .5em;
 }
 div.rendered_html pre {
- font-family: monospace, monospace;
- font-size: 11pt !important;
+ font-family: "Roboto Mono", monospace, monospace;
+ font-size: 10pt !important;
  line-height: 170% !important;
  color: #abc1e2 !important;
  background: #2a313c;
@@ -1971,8 +1983,8 @@ div.rendered_html pre {
 }
 div.text_cell_render pre,
 div.text_cell_render code {
- font-family: monospace, monospace;
- font-size: 11pt !important;
+ font-family: "Roboto Mono", monospace, monospace;
+ font-size: 10pt !important;
  line-height: 170% !important;
  color: #abc1e2;
  background: #262931;
@@ -2083,7 +2095,7 @@ div#_vivaldi-spatnav-focus-indicator._vivaldi-spatnav-focus-indicator {
 }
 .rendered_html td {
  font-family: sans-serif !important;
- font-size: 7.6pt;
+ font-size: 8pt;
 }
 .rendered_html table {
  font-family: sans-serif !important;
@@ -2097,7 +2109,7 @@ div#_vivaldi-spatnav-focus-indicator._vivaldi-spatnav-focus-indicator {
 }
 .rendered_html thead {
  font-family: sans-serif !important;
- font-size: 8.6pt !important;
+ font-size: 9.0pt !important;
  background: #2e3642;
  color: #d4d8ec;
  border-bottom: 1px solid #2e3642;
@@ -2414,13 +2426,13 @@ span.bg-danger.text-danger {
  box-shadow: inset 0 1px 1px rgba(0,0,0,0.025);
 }
 .kse-input-group-pretty > kbd {
- font-family: monospace, monospace;
+ font-family: "Roboto Mono", monospace, monospace;
  color: #a2b0c7;
  font-weight: normal;
  background: transparent;
 }
 .kse-input-group-pretty > kbd {
- font-family: monospace, monospace;
+ font-family: "Roboto Mono", monospace, monospace;
  color: #a2b0c7;
  font-weight: normal;
  background: transparent;
@@ -2534,7 +2546,7 @@ div.collapsible_headings_toggle .fa-caret-right:before {
 #navigate_menu a,
 .toc {
  color: #a2b0c7 !important;
- font-size: 11pt !important;
+ font-size: 10pt !important;
 }
 #toc li > span:hover {
  background-color: #343d4b !important;
@@ -2543,15 +2555,15 @@ div.collapsible_headings_toggle .fa-caret-right:before {
 #navigate_menu a:hover,
 .toc {
  color: #e4e8ee !important;
- font-size: 11pt !important;
+ font-size: 10pt !important;
 }
 #toc-wrapper .toc-item-num {
  color: #4c8be2 !important;
- font-size: 11pt !important;
+ font-size: 10pt !important;
 }
 input.raw_input {
- font-family: monospace, monospace;
- font-size: 11pt !important;
+ font-family: "Roboto Mono", monospace, monospace;
+ font-size: 10pt !important;
  color: #cdd2e9;
  background-color: #2a313c;
  border-color: #282f39;
@@ -2786,8 +2798,8 @@ div#short-key-bindings-intro.well,
  background: #262931;
 }
 .terminal-app .terminal {
- font-family: monospace, monospace;
- font-size: 11pt;
+ font-family: "Roboto Mono", monospace, monospace;
+ font-size: 10pt;
  line-height: 170%;
  color: #cdd2e9;
  background: #303845;
@@ -2902,8 +2914,8 @@ div#pager .ui-resizable-handle {
 }
 div.CodeMirror,
 div.CodeMirror pre {
- font-family: monospace, monospace;
- font-size: 9pt;
+ font-family: "Roboto Mono", monospace, monospace;
+ font-size: 10pt;
  line-height: 170%;
  color: #cdd2e9;
 }
@@ -2964,8 +2976,8 @@ div.js-error {
  color: #e39194;
 }
 .ipython_tooltip {
- font-family: monospace, monospace;
- font-size: 11pt;
+ font-family: "Roboto Mono", monospace, monospace;
+ font-size: 10pt;
  line-height: 170%;
  border: 2px solid #2b333f;
  background: #3c4657;
@@ -2978,8 +2990,8 @@ div.js-error {
  z-index: 1000;
 }
 .ipython_tooltip .tooltiptext pre {
- font-family: monospace, monospace;
- font-size: 11pt;
+ font-family: "Roboto Mono", monospace, monospace;
+ font-size: 10pt;
  line-height: 170%;
  background: #3c4657;
  background-color: #3c4657;
@@ -3000,8 +3012,8 @@ div.tooltiptext.bigtooltip {
  max-width: 800px;
 }
 .cm-s-ipython.CodeMirror {
- font-family: monospace, monospace;
- font-size: 11pt;
+ font-family: "Roboto Mono", monospace, monospace;
+ font-size: 10pt;
  background: #303845;
  color: #cdd2e9;
  border-radius: 2px;
@@ -3225,16 +3237,31 @@ body :focus .MathJax {
  margin: 0px;
  margin-left: 2px;
  overflow: auto;
- font-family: monospace, monospace;
- font-size: 11pt;
+ font-family: "Roboto Mono", monospace, monospace;
+ font-size: 10pt;
  color: #cdd2e9;
  width: auto;
 }
 div#maintoolbar {
- display: none !important;
+ margin-left: 8px !important;
 }
-#header-container {
- display: none !important;
+.toolbar.container {
+ width: 100% !important;
+}
+span.save_widget span.filename {
+ margin-left: 8px;
+ height: initial;
+ font-size: 100%;
+ color: #4c8be2;
+ background-color: #303845;
+}
+span.save_widget span.filename:hover {
+ color: #61afef;
+ background-color: #303845;
+}
+#menubar {
+ padding-top: 4px;
+ background-color: #262931;
 }
 
 <script>
